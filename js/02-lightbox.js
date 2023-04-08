@@ -23,11 +23,10 @@ function onClick(evt) {
   console.log(currentItem);
 
 
-
-  const lightbox = new SimpleLightbox('.gallery__item a',  {
-    captionsData : "${description}",
-    className: "simple-lightbox",
-  });
+  const lightbox = new SimpleLightbox('.gallery a', {  
+    captionsData: 'alt', 
+     captionDelay: 250,});
+  
   console.log(lightbox.options);
 }
 
